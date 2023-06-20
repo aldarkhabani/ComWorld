@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="label">CompWorld</string>
-</resources>
+    <string name="label">pc mart</string>
+    <string name="use">name</string>
+    <string name="pass">password</string>
+    <string name="btn">signin</string>
+    <string name="enter">enter the invoice</string>
+    <string name="type">type the invoice:</string>
+    <string name="sale">purchases/sales</string>
+    <string name="name1">customer/agent</string>
+    <string name="invoice">Description of an invoice.</string>
+    <string name="details">Invoice Details.</string>
+    <string name="mat">material</string>
+    <string name="number">number</string>
+    <string name="price1">price</string>
+    <string name="total1">total</string>
+    <string name="Save">Save the invoice</string>
+    <string name="report">reports</string>
+
+    </resources>
