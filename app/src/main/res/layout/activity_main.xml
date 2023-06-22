@@ -6,41 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="41dp"
-        app:layout_constraintBottom_toTopOf="@+id/et_Usename"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cccc"
-        android:importantForAccessibility="no" />
-
     <EditText
         android:id="@+id/et_Usename"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="21dp"
         android:background="#ffffff"
         android:ems="10"
         android:hint="@string/use"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:padding="12dp"
         app:layout_constraintBottom_toTopOf="@+id/et_Password"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/et_Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="57dp"
         android:background="#ffffff"
         android:ems="10"
         android:hint="@string/pass"
@@ -54,18 +40,31 @@
         android:id="@+id/bt_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="91dp"
-        android:background="#00773F"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="104dp"
+        android:background="@color/ic_lap_background"
         android:onClick="sign"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:text="@string/btn"
-        android:textColor="#ffffff"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/et_Password"
         app:layout_constraintTop_toBottomOf="@+id/et_Password"
         tools:onClick="btn_next" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="386dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_Usename"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168"
+        app:srcCompat="@drawable/pppp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,18 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".report">
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="155dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="28dp"
-        android:text="التقارير"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/report"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="34sp"
+        tools:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/type1"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="24sp"
+        tools:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="223dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp" />
+
+    <LinearLayout
+        android:id="@+id/et_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/from"
+            android:textSize="24sp"
+            tools:textStyle="bold"
+            android:textColor="@color/design_default_color_secondary_variant"/>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="139dp"
+            android:layout_height="73dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/to"
+            android:textSize="24sp"
+            tools:textStyle="bold"
+            android:textColor="@color/design_default_color_secondary_variant"/>
+
+        <CalendarView
+            android:id="@+id/calendarView2"
+            android:layout_width="139dp"
+            android:layout_height="73dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="128dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="220dp"
+        android:background="#91BED3"
+        android:onClick="goreport"
+        android:text="@string/search2"
+        tools:layout_centerHorizontal="false" />
+
+    <LinearLayout
+        android:id="@+id/et_lll"
+        android:layout_width="223dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="360dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/search1"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:textSize="24sp"
+            tools:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="report3"
+            android:text="@string/search2" />
+    </LinearLayout>
+
+</RelativeLayout>

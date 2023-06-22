@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
 public class MainActivity extends AppCompatActivity {
-    Button bt_sign;
+    Button bt_sign ;
     EditText et_Usename,et_Password;
 
     @Override
