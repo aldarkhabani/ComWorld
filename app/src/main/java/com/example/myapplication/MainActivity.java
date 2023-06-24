@@ -3,7 +3,6 @@ package com.example.myapplication;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         bt_sign = findViewById(R.id.bt_sign);
         et_Usename = findViewById(R.id.et_Usename);
         et_Password = findViewById(R.id.et_Password);
-
     }
     public void sign (View v) {
         Intent intent = new Intent(MainActivity.this,mainpage1.class);
@@ -48,6 +46,5 @@ public class MainActivity extends AppCompatActivity {
                     .show();
         }
     }
-
 
 }
