@@ -49,34 +49,50 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:text="@string/from"
             android:textSize="24sp"
             tools:textStyle="bold"
             android:textColor="@color/design_default_color_secondary_variant"/>
 
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="139dp"
-            android:layout_height="73dp" />
+<!--        <CalendarView-->
+<!--            android:id="@+id/calendarView"-->
+<!--            android:layout_width="139dp"-->
+<!--            android:layout_height="73dp" />-->
+
+        <Button
+            android:id="@+id/btnSelectFromDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            tools:backgroundTint="#91BDB9" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:text="@string/to"
             android:textSize="24sp"
             tools:textStyle="bold"
             android:textColor="@color/design_default_color_secondary_variant"/>
 
-        <CalendarView
-            android:id="@+id/calendarView2"
-            android:layout_width="139dp"
-            android:layout_height="73dp"
-            />
+<!--        <CalendarView-->
+<!--            android:id="@+id/calendarView2"-->
+<!--            android:layout_width="139dp"-->
+<!--            android:layout_height="73dp"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/btnSelectToDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Select Date"
+            tools:backgroundTint="#91BDB9" />
 
     </LinearLayout>
 
@@ -87,7 +103,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="130dp"
         android:layout_marginTop="220dp"
-        android:background="#91BED3"
+        android:backgroundTint="#91BDB9"
         android:onClick="goreport"
         android:text="@string/search2"
         tools:layout_centerHorizontal="false" />
@@ -119,6 +135,7 @@
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#91BDB9"
             android:onClick="report3"
             android:text="@string/search2" />
     </LinearLayout>

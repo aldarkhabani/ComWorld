@@ -4,7 +4,7 @@
     <string name="use">name</string>
     <string name="pass">password</string>
     <string name="btn">signin</string>
-    <string name="enter">Enter the invoice</string>
+    <string name="enter">Enter the invoice:</string>
     <string name="type">type the invoice:</string>
     <string name="sale">purchases/sales</string>
     <string name="name1">Name of customer/agent</string>
@@ -13,11 +13,11 @@
     <string name="mat">Material</string>
     <string name="number">number</string>
     <string name="price1">price</string>
-    <string name="total1">total</string>
+    <string name="total1">total:</string>
     <string name="Save">Save the invoice</string>
     <string name="report">reports</string>
     <string name="type1">Type of report: </string>
-    <string name="sit">Sitting</string>
+    <string name="sit">Settings</string>
     <string name="from">From</string>
     <string name="to">To</string>
     <string name="search2">Search</string>
