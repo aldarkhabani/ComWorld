@@ -108,6 +108,18 @@
         android:text="@string/search2"
         tools:layout_centerHorizontal="false" />
 
+    <Button
+        android:id="@+id/best_seller"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="270dp"
+        android:backgroundTint="#91BDB9"
+        android:onClick="onClickBest_seller"
+        android:text="@string/search_best_seller"
+        tools:layout_centerHorizontal="true" />
+
     <LinearLayout
         android:id="@+id/et_lll"
         android:layout_width="223dp"
@@ -132,11 +144,11 @@
             android:layout_height="50dp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnSearchAgent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#91BDB9"
-            android:onClick="report3"
+            android:onClick="btnSearchAgent"
             android:text="@string/search2" />
     </LinearLayout>
 

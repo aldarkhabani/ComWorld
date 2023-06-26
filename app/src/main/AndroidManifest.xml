@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Best_Seller"
+            android:exported="false" />
+        <activity
             android:name=".report4"
             android:exported="true" />
         <activity

@@ -2,52 +2,46 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-public class report4 extends AppCompatActivity {
+public class Best_Seller extends AppCompatActivity {
 
+    Material[] listMaterial ;
+    int[] listCountSale ;
 
-    Agent[] listAgent ;
-    int[] listCountOrder ;
+    TableLayout tl_BestSeller;
 
-    TableLayout tl_agent;
-
-    String typeAgent = "";
-
-
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report4);
-        tl_agent = findViewById(R.id.tl_agent);
-        if(getIntent().getIntArrayExtra("CountOrder") != null) {
-            listCountOrder = getIntent().getIntArrayExtra("CountOrder");
+        setContentView(R.layout.activity_best_saler);
+        tl_BestSeller = findViewById(R.id.tl_BestSeller);
+        if(getIntent().getIntArrayExtra("CountSale") != null) {
+            listCountSale = getIntent().getIntArrayExtra("CountSale");
         }
-        if(getIntent().getSerializableExtra("Agent") != null) {
-            listAgent = (Agent[]) getIntent().getSerializableExtra("Agent");
+        if(getIntent().getSerializableExtra("Material") != null) {
+            listMaterial = (Material[]) getIntent().getSerializableExtra("Material");
         }
-        if(listAgent != null && listCountOrder != null){
+        if(listMaterial != null && listCountSale != null){
             TableRow tableRow;
             TextView textView;
             int i = 0;
-            for (Agent agent : listAgent) {
+            for (Material material : listMaterial) {
                 tableRow = new TableRow(getApplicationContext());
                 for (int j = 0; j < 3; j++) {
                     textView = new TextView(getApplicationContext());
-                    textView.setText(agent.getArray()[j]);
+                    textView.setText(material.getArray()[j]);
                     textView.setPadding(20, 0, 0, 0);
                     tableRow.addView(textView);
                 }
                 textView = new TextView(getApplicationContext());
-                textView.setText(String.valueOf(listCountOrder[i]));
+                textView.setText(String.valueOf(listCountSale[i]));
                 textView.setPadding(20, 0, 0, 0);
                 tableRow.addView(textView);
-                tl_agent.addView(tableRow);
+                tl_BestSeller.addView(tableRow);
                 i++;
             }
         }

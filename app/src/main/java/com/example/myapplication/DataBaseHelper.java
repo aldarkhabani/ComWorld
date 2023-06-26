@@ -30,7 +30,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             dataBase.execSQL("CREATE TABLE IF NOT EXISTS " + ApiConstance.typeTable + " (id INTEGER PRIMARY KEY AUTOINCREMENT," + "name TEXT," + "description TEXT);");
             dataBase.execSQL("CREATE TABLE IF NOT EXISTS " + ApiConstance.materialTable + " (" + "id INTEGER PRIMARY KEY AUTOINCREMENT," + "name TEXT," + "Type_Id INTEGER," + "description TEXT," + " FOREIGN KEY (id) REFERENCES " + ApiConstance.typeTable + " (Type_Id ));");
             dataBase.execSQL("CREATE TABLE IF NOT EXISTS " + ApiConstance.agentTable + " (" + "id INTEGER PRIMARY KEY AUTOINCREMENT," + "name TEXT," + "description TEXT);");
-            dataBase.execSQL("CREATE TABLE IF NOT EXISTS " + ApiConstance.invoiceTable + " (" + "id INTEGER PRIMARY KEY AUTOINCREMENT," + "agent_id INTEGER ," + "date TEXT," + "isBuy INTEGER," + "description TEXT," + " FOREIGN KEY (id) REFERENCES " + ApiConstance.agentTable + " (agent_id ));");
+            dataBase.execSQL("CREATE TABLE IF NOT EXISTS " + ApiConstance.invoiceTable + " (" + "id INTEGER PRIMARY KEY AUTOINCREMENT," + "agent_id INTEGER ,"+ "Type_id INTEGER," + "date TEXT," + "isBuy INTEGER," + "description TEXT," + " FOREIGN KEY (id) REFERENCES " + ApiConstance.agentTable + " (agent_id ), FOREIGN KEY (id) REFERENCES " + ApiConstance.typeTable + " (Type_id ));");
             dataBase.execSQL("CREATE TABLE IF NOT EXISTS " + ApiConstance.invoiceDetailTable + " (" + "id INTEGER PRIMARY KEY AUTOINCREMENT," + "invoice_id INTEGER ," + "material_id INTEGER," + "number INTEGER," + "price REAL," + "total REAL," + " FOREIGN KEY (id) REFERENCES " + ApiConstance.invoiceTable + " (invoice_id )," + " FOREIGN KEY (id) REFERENCES " + ApiConstance.materialTable + " (material_id ));");
         }catch (Exception error) {
             System.out.print(error.getMessage());
@@ -82,12 +82,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private void insertAgent(){
         ContentValues contentValues = new ContentValues();
         contentValues.put("description","customer");
-        contentValues.put("type","1");
         contentValues.put("name","ahmad");
         System.out.println(insert(ApiConstance.agentTable,contentValues));
         contentValues = new ContentValues();
         contentValues.put("description","resource");
-        contentValues.put("type","0");
         contentValues.put("name","hennas");
         System.out.println(insert(ApiConstance.agentTable,contentValues));
     }

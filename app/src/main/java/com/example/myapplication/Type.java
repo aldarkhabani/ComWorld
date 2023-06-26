@@ -3,7 +3,9 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 
-public class Type {
+import java.io.Serializable;
+
+public class Type implements Serializable {
     final Integer id;
     final String name;
     final String description;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".report4">
+    tools:context=".Best_Seller">
 
     <ScrollView
         android:id="@+id/layout"
@@ -30,7 +30,7 @@
                 >
 
                 <TableLayout
-                    android:id="@+id/tl_agent"
+                    android:id="@+id/tl_BestSeller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="10dp"
@@ -46,28 +46,28 @@
                             android:layout_height="wrap_content"
                             android:paddingStart="3dp"
                             android:paddingEnd="3dp"
-                            android:text="@string/id_agent" />
+                            android:text="@string/id_material" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="3dp"
                             android:paddingEnd="3dp"
-                            android:text="@string/name_agent" />
+                            android:text="@string/name_Material" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="3dp"
                             android:paddingEnd="3dp"
-                            android:text="@string/description_agent" />
+                            android:text="@string/description_material" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingStart="3dp"
                             android:paddingEnd="3dp"
-                            android:text="@string/total_order" />
+                            android:text="@string/amount" />
 
                     </TableRow>
                 </TableLayout>
@@ -75,6 +75,5 @@
             </LinearLayout>
         </HorizontalScrollView>
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

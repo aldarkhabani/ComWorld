@@ -24,5 +24,23 @@
     <string name="search2">Search</string>
     <string name="search1">Search top partner</string>
     <string name="is_buy">Is Buy</string>
+    <string name="id">id</string>
+    <string name="agent_id">Agent Id</string>
+    <string name="is_buy_tv">Is Buy</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="material_id">Material id</string>
+    <string name="number_tv">Number</string>
+    <string name="price">Price</string>
+    <string name="total">Total</string>
+    <string name="total_order">Total Order</string>
+    <string name="description_agent">Description</string>
+    <string name="name_agent">Name</string>
+    <string name="id_agent">id</string>
+    <string name="search_best_seller">Search best seller</string>
+    <string name="id_material">id</string>
+    <string name="name_Material">Name</string>
+    <string name="description_material">Description</string>
+    <string name="amount">Amount</string>
 
 </resources>

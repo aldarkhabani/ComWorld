@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
-public class InvoiceDetail {
+import java.io.Serializable;
+
+public class InvoiceDetail implements Serializable {
     final Integer id,invoice_id,material_id,number;
     final double price,total;
 
